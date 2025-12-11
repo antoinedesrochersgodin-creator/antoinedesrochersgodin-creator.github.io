@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Antoine</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      font-family: sans-serif;
+    }
+
+    .arc-text {
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      width: 500px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    /* Effet texte courbé via SVG */
+    svg {
+      width: 500px;
+      height: 250px;
+      overflow: visible;
+    }
+
+    text {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <svg viewBox="0 0 500 250">
+    <defs>
+      <path id="curve" d="M 50 200 A 200 200 0 0 1 450 200" />
+    </defs>
+
+    <text text-anchor="middle">
+      <textPath href="#curve" startOffset="50%">
+        Antoine Desrochers
+      </textPath>
+    </text>
+  </svg>
+
+</body>
+</html>
