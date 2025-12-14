@@ -2,7 +2,8 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Test vidéo</title>
+  <title>Test taille vidéo</title>
+
   <style>
     body {
       margin: 0;
@@ -14,14 +15,17 @@
       position: fixed;
       top: 20px;
       left: 20px;
-      width: 400px;
+      width: 400px;   /* ← CHANGE ICI */
+      height: auto;
+      border: 2px solid red; /* pour bien voir */
     }
   </style>
+
 </head>
 <body>
 
   <video autoplay loop muted playsinline>
-    <source src="nom.mp4" type="video/mp4">
+    <source src="nom-v2.mp4" type="video/mp4">
   </video>
 
 </body>
