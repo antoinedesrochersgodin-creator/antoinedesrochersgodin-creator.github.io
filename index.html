@@ -7,39 +7,108 @@
   <style>
     body {
       margin: 0;
-      min-height: 100vh;
       background: white;
       font-family: Arial, Helvetica, sans-serif;
       font-weight: 400;
     }
 
-    /* Structure en deux moitiés */
+    /* Conteneur principal */
     .page {
       display: flex;
       min-height: 100vh;
     }
 
-    /* Moitié gauche */
+    /* Colonne gauche */
     .left {
       width: 50vw;
       position: relative;
     }
 
-    /* Moitié droite */
+    /* Colonne droite */
     .right {
       width: 50vw;
       display: flex;
       align-items: center;
     }
 
+    /* Bio */
+    .bio {
+      max-width: 560px;
+      margin-left: 60px;
+      margin-right: 40px;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    .bio p {
+      margin-bottom: 1em;
+    }
+
     /* Vidéo */
-    video {
+    .corner-video {
       position: fixed;
       top: 20px;
       left: 20px;
       width: 400px;
-      height: auto;
     }
 
-    /* Texte de bio */
-    .bio {
+    .corner-video video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Vidéo -->
+  <div class="corner-video">
+    <video autoplay loop muted playsinline>
+      <source src="nom.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Page -->
+  <div class="page">
+
+    <div class="left">
+      <!-- espace visuel -->
+    </div>
+
+    <div class="right">
+      <div class="bio">
+
+        <p>
+          Comment utiliser les nouvelles technologies au services de problématiques sociales ?
+          Voilà une question que Antoine Desrochers-Godin se pose souvent.
+        </p>
+
+        <p>
+          D'abord artiste sonore, Antoine a beaucoup fureté dans le domaine des arts numériques
+          pour répondre à différents besoins dans son entourage. Animé par l'art de raconter,
+          le cerveau d'Antoine cherche à trouver le filon qui l'inspire, que ce soit par du
+          <em>mapping vidéo</em>, de l'art sonore, des objets interactifs ou d'autres dispositifs
+          incongrus.
+        </p>
+
+        <p>
+          Les projets éducatifs, collaboratifs et sociaux sont ceux auxquels il aime se dédier
+          cœur et âme. Ayant baigné dans l'art expérimental, il affectionne particulièrement
+          les idées innovantes et marginales.
+        </p>
+
+        <p>
+          Il a fait ses premières apparitions au Festival Ultrason, où ses créations ont été
+          saluées pour leur sensibilité et leur originalité. Antoine travaille désormais sur
+          divers projets raboutant la musique expérimentale et le design d'expérience interactive.
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
