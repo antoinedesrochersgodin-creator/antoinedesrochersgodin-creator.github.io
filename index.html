@@ -2,30 +2,44 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Test taille vidéo</title>
+  <title>Portfolio Antoine Desrochers-Godin</title>
 
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       background: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
     }
 
+    /* Structure en deux moitiés */
+    .page {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Moitié gauche */
+    .left {
+      width: 50vw;
+      position: relative;
+    }
+
+    /* Moitié droite */
+    .right {
+      width: 50vw;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Vidéo */
     video {
       position: fixed;
       top: 20px;
       left: 20px;
-      width: 400px;   /* ← CHANGE ICI */
+      width: 400px;
       height: auto;
     }
-  </style>
 
-</head>
-<body>
-
-  <video autoplay loop muted playsinline>
-    <source src="nom.mp4" type="video/mp4">
-  </video>
-
-</body>
-</html>
+    /* Texte de bio */
+    .bio {
